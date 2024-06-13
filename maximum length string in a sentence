@@ -1,0 +1,13 @@
+var n=prompt("enter the string: ");
+var arr=n.split(" ")
+ 
+for(var i=0;i<arr.length;i++){
+    
+    var b=0;
+    if(arr[i].length>b){
+        b=arr[i].length;
+        c=arr[i];
+    }
+    
+}
+console.log(c+ " the length is: "+b)
