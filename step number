@@ -1,0 +1,24 @@
+var n=+prompt("enter the number: ");
+
+var b=isStepNumber(n);
+console.log(b)
+
+
+function isStepNumber(num){
+    var a=num;
+    while(num>=10){
+        var num1=num%10;
+        
+        var a=Math.floor(a/10);
+        console.log(a)
+        var num2=a%10;
+        
+        var d= Math.abs(num1-num2);
+        if(d!=1){
+            return "the number is not a step number"
+        }
+        
+        num=Math.floor(num/10)
+    }
+    return "the number is step number"
+}
