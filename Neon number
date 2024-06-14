@@ -1,0 +1,18 @@
+var a=+prompt("enter the number: ");
+var b=a**2;
+isNeonNumber(a,b);
+
+function isNeonNumber(c,d){
+    sum=0;
+    while(d>0){
+        var num1=d%10;
+        sum=sum+num1;
+        d=Math.floor(d/10);
+    }
+    if(sum==c){
+        console.log("the number is neon number")
+    }
+    else{
+        console.log("the number is not neon number")
+    }
+}
