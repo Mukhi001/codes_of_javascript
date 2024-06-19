@@ -1,0 +1,39 @@
+var s=prompt("enter a string: ")
+convert(s);
+
+function convert(str){
+    var str1="";
+    for(let i=0;i<str.length;i++){
+        var l=str.charCodeAt(i);
+        if(l>=65 && l<=90){
+            str1=str1+String.fromCharCode(l+32)
+            
+        }
+        else if(l>=97 && l<=122){
+            str1=str1+String.fromCharCode(l-32)
+        }
+    }
+    console.log(str1)
+}
+
+//without ASCII
+// function toggleCase(word) {
+//     let toggledWord = '';
+    
+//     for (let i = 0; i < word.length; i++) {
+//         let char = word[i];
+//         if (char === char.toUpperCase()) {
+//             toggledWord += char.toLowerCase();
+//         } else {
+//             toggledWord += char.toUpperCase();
+//         }
+//     }
+    
+//     return toggledWord;
+// }
+
+// // Example usage
+// const inputWord = "HelloWorld";
+// const toggledWord = toggleCase(inputWord);
+// console.log(toggledWord);  // Output: hELLOwORLD
+
