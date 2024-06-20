@@ -1,0 +1,22 @@
+var str = prompt("enter a string: ");
+str=str.toLowerCase();
+var i, j, result = [];
+for (i = 0; i < str.length; i++) {
+      for (j = i + 1; j < str.length + 1; j++) {
+          result.push(str.slice(i, j));
+          }
+}
+for(let k=0;k<result.length;k++){
+      if(result[k].length>=2)
+      isPalindrome(result[k])
+  }
+
+function isPalindrome(a){
+    var res=""
+    for(let m=a.length-1;m>=0;m--){
+        res=res+a[m];
+    }
+    if(res==a){
+        console.log(`"${a}" is palindrome`)
+    }
+}
