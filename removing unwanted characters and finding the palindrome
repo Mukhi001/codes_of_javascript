@@ -1,0 +1,23 @@
+var s=prompt("enter the string: ");
+convert(s);
+
+function convert(str){
+    var res="";
+    for(let i=0;i<str.length;i++){
+        if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<=90)
+            res=res+str[i]
+        else if(str.charCodeAt(i)>=97 && str.charCodeAt(i)<=122)
+            res=res+str[i]
+    }
+    console.log(`After removing all special characters and digits the word is: ${res}`)
+    isPalindrome(res);
+}
+
+function isPalindrome(a){
+    var r=""
+    for(let m=a.length-1;m>=0;m--){
+        r=r+a[m];
+    }
+    if(r==a)
+        console.log(`"${a}" is palindrome`)
+}
