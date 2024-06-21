@@ -1,0 +1,18 @@
+var s=["mukesj","rahul","chairanya"];
+var count=0;
+var arr=[]
+for(var i=0;i<s.length;i++){
+    var b=hv(s[i]);
+    arr[count++]=b;
+}
+console.log(arr)
+
+function hv(str){
+    var sum=0;
+    for(var j=0;j<str.length;j++){
+        if(str[j]=="a" || str[j]=="e" ||str[j]=="i" || str[j]=="o" || str[j]=="u"){
+            sum++;
+        }
+    }
+    return sum;
+}
