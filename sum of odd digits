@@ -1,0 +1,11 @@
+var a=+prompt("enter the number: ");
+var sum=0;
+while(a>0){
+    var b=a%10;
+    if(b%2==1){
+    sum=sum+b;
+    }
+    a=Math.floor(a/10);
+    
+}
+console.log(sum)
