@@ -1,0 +1,20 @@
+var a=+prompt("enter the number: ");
+var sume=0;
+var sumo=0;
+while(a>0){
+    var b=a%10;
+    if(b%2==0){
+    sume=sume+b;
+    }
+    else if(b%2==1){
+        sumo=sumo+b
+    }
+    a=Math.floor(a/10);
+    
+}
+if(sumo>sume){
+console.log(`sum of odd sum is higher`)
+}
+else{
+    console.log(`sum of even is higher`)
+}
