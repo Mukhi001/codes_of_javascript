@@ -1,0 +1,25 @@
+var a=+prompt("enter the number : ");
+for(let i=a+1;;i++){
+    var c =isPrime(i);
+    if(c==true){
+        console.log(i);
+        break;
+    }
+}
+
+function isPrime(b){
+    var flag=0;
+    for(let j=2;j<=b/2;j++){
+        if(b%j==0){
+            flag++;
+            break;
+        }
+    }
+    if(flag==0){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
+}
