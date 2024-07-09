@@ -2,7 +2,14 @@ var a=+prompt("enter the number : ");
 for(let i=a+1;;i++){
     var c =isPrime(i);
     if(c==true){
-        console.log(i);
+        console.log("forward prime is for the given number: "+i);
+        break;
+    }
+}
+for(let x=a-1;x>1;x--){
+    var d=isPrime(x);
+    if(d==true){
+        console.log("backward prime is for the given number: "+x);
         break;
     }
 }
