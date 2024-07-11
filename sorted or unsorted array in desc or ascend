@@ -1,0 +1,22 @@
+var a=[5,5,4,3,2,7];
+var countd=0;
+var counta=0;
+for(let i=0;i<a.length;i++){
+    for(let j=i;j<a.length;j++){
+        if(a[i]<a[j]){
+        countd++
+        }
+        if(a[i]>a[j]){
+            counta++;
+        }
+    }
+}
+if(countd<1){
+    console.log("the array is descending sorted")
+}
+else if(counta<1){
+    console.log("the array is ascending sorted")
+}
+else{
+    console.log("the array is unsorted")
+}
