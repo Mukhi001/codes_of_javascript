@@ -1,0 +1,26 @@
+var rows=+prompt("enter the number of rows: ");
+var cols =+prompt("enter the number of cols: ");
+matrix=[];
+sum=0;
+for(let i=0;i<rows;i++){
+    sub=[]
+    
+    for(let j=0;j<cols;j++){
+        console.log(`the ${i} th row and ${j} th coloum: `)
+        ele=+prompt();
+        sub.push(ele)
+    }
+    console.log(sub)
+    matrix.push(sub)
+    
+}
+console.log(matrix)
+
+for(let i=0;i<matrix.length;i++){
+    for(let j=0;j<matrix[i].length;j++){
+        if(i==0 || i==matrix.length-1 || j==0 || j==matrix[i].length-1){
+            sum+=matrix[i][j]
+        }
+    }
+}
+console.log(sum)
