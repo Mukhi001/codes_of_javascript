@@ -1,0 +1,27 @@
+ var rows=5;
+ 
+ for(let i=1;i<=rows;i++){
+     var str=""
+     var v=rows-1;
+     var a=i;
+     for(let j=1;j<=i;j++){
+         if(j>1){
+             a=a+v
+             str+=a+" "
+             v--
+         }
+         else{
+            str+= a+" "
+         }
+     }
+     console.log(str)
+ }
+
+
+
+o/p:
+1 
+2 6 
+3 7 10 
+4 8 11 13 
+5 9 12 14 15 
